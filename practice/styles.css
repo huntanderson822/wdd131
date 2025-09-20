@@ -1,0 +1,22 @@
+.highlight {
+    background-color: lightsalmon;
+}
+
+header {
+    background-color: navy;
+    padding: .5em;
+    color: white;
+    }
+
+header >h1 {
+    margin-bottom: 0;
+}
+header > h2 {
+    font-size: 1.1em;
+    margin-top: .2em;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 650px;
+    margin: 0 auto;
+}

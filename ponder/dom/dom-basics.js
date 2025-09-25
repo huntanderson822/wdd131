@@ -1,3 +1,7 @@
+const newP =document.createElement("p");
+newP.textContent = "This is a new paragraph added with JavaScript.";
+document.body.append(newP);
+
 const newParagraph = document.createElement("p");
 newParagraph.innerText = "Added with Javascript!";
 document.body.appendChild(newParagraph);

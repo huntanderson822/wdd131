@@ -23,11 +23,12 @@ body {
     text-transform: uppercase; 
 }
 
-#heading p {
+#heading h2 {
     color: #006EB6; 
     line-height: 1.5;
     text-align: center; 
-    font-size: 1.25em;
+    font-size: 1.1em;
+    text-transform: uppercase;
 }
 
 hr {
@@ -59,4 +60,6 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    padding-top: 60px;
+
 }

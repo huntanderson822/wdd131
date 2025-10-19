@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids Read for Fun</title>
+  <meta name="description" content="Book reviews for families: plot, themes, age appropriateness, and quality." />
+  <meta name="author" content="Your Name" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./blog.css" />
+  <script src="./blog.js" defer></script>
+</head>
+<body>
+  <div class="skiptocontent"><a href="#maincontent">Skip to main content</a></div>
+
+  <header class="site-header" role="banner">
+    <h1 class="site-title">Kids Read for Fun</h1>
+    <nav aria-label="Primary" class="site-nav">
+      <ul class="nav-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="maincontent" class="layout" role="main">
+    <section aria-label="Latest reviews" class="articles">
+      <article class="review" aria-labelledby="title-1">
+        <div class="review-meta">
+          <p class="review-date"><time datetime="2022-07-05">July 5, 2022</time></p>
+          <p class="review-age">10–14</p>
+          <p class="review-genre">Fantasy</p>
+          <p class="review-rating" aria-label="Rating: 4 out of 5 stars">★★★★</p>
+        </div>
+        <div class="review-body">
+          <header>
+            <h2 id="title-1" class="review-title">Septimus Heap Book One: Magyk</h2>
+          </header>
+          <figure class="review-cover">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+                 alt="Book cover for Septimus Heap 1"
+                 width="360" height="480" loading="lazy">
+            <figcaption>Fantasy</figcaption>
+          </figure>
+          <p class="review-summary">
+            If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.
+          </p>
+        </div>
+      </article>
+
+      <article class="review" aria-labelledby="title-2">
+        <div class="review-meta">
+          <p class="review-date"><time datetime="2021-12-12">December 12, 2021</time></p>
+          <p class="review-age">12–16</p>
+          <p class="review-genre">Fantasy</p>
+          <p class="review-rating" aria-label="Rating: 4 out of 5 stars">⭐⭐⭐⭐</p>
+        </div>
+        <div class="review-body">
+          <header>
+            <h2 id="title-2" class="review-title">Magnus Chase Book One: Sword of Summer</h2>
+          </header>
+          <figure class="review-cover">
+            <img src="https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300"
+                 alt="Book cover for Magnus Chase 1"
+                 width="360" height="480" loading="lazy">
+            <figcaption>Fantasy</figcaption>
+          </figure>
+          <p class="review-summary">
+            The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian
+            (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <aside aria-labelledby="filters-title" class="filters">
+      <h2 id="filters-title">Browse</h2>
+      <div class="filter-row"><label>Sort:</label><div class="fake-select" aria-hidden="true"></div></div>
+      <div class="filter-row"><label>Age:</label><div class="fake-select" aria-hidden="true"></div></div>
+      <div class="filter-row"><label>Genre:</label><div class="fake-select" aria-hidden="true"></div></div>
+      <div class="filter-row"><label>Rating:</label><div class="fake-select" aria-hidden="true"></div></div>
+      <p class="visually-hidden">Filter form will go here in the next unit.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Kids Read for Fun</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

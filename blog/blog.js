@@ -58,7 +58,7 @@ function makeReview(a) {
   article.className = 'review';
   article.setAttribute('aria-labelledby', `title-${a.id}`);
 
-  const meta = document.createElement('article');
+  const meta = document.createElement('div');
   meta.className = 'review-meta';
   meta.innerHTML = `
     <p class="review-date">
@@ -66,10 +66,10 @@ function makeReview(a) {
     </p>
     <p class="review-age">Ages: ${a.ages}</p>
     <p class="review-genre">Genre: ${a.genre}</p>
-    <p class="review-star">Rating: ${starCount(a.stars)} out of 5</p>
+    <p class="review-rating">Rating: ${starCount(a.stars)} out of 5</p>
   `;
 
-  const body = document.createElement('article');
+  const body = document.createElement('div');
   body.className = 'review-body';
 
   const header = document.createElement('header');
@@ -88,7 +88,7 @@ function makeReview(a) {
   img.height = 480;
   const figcaption = document.createElement('figcaption');
   figcaption.textContent = a.genre;
-  figure.appendChild(img, figcaption);
+  figure.append(img, figcaption);
 
 
   const summary = document.createElement('p');

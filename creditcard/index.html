@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Credit Card Form WDD 131</title>
+    <meta name="description" content="Simple credit card form" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="wrap">
+      <form class="cc-form" action="#" method="post">
+        <section class="cards-grid">
+          <div class="card back" aria-label="credit card back">
+            <div class="magstripe" aria-hidden="true"></div>
+            <div class="cvv">
+              <label for="cardCvv">CVC/CVV</label>
+              <input id="cardCvv" type="text" inputmode="numeric" maxlength="4" placeholder="xxx" required />
+            </div>
+          </div>
+
+          <div class="card front" aria-label="credit card front">
+            <p class="total">TOTAL: $199</p>
+
+            <div class="row number">
+              <label for="cardNumber">CARD NUMBER</label>
+              <input id="cardNumber" type="text" inputmode="numeric" maxlength="19"
+                     placeholder="1234 5678 9101 1020" required />
+            </div>
+
+            <div class="row holder-exp">
+              <div class="holder">
+                <label for="cardName">CARD HOLDER</label>
+                <input id="cardName" type="text" placeholder="John Doe" required />
+              </div>
+              <div class="exp">
+                <span class="exp-label">EXPIRATION</span>
+                <label class="visually-hidden" for="cardMonth">MM</label>
+                <input id="cardMonth" type="text" inputmode="numeric" maxlength="2" placeholder="MM" required />
+                <label class="visually-hidden" for="cardYear">YY</label>
+                <input id="cardYear" type="text" inputmode="numeric" maxlength="2" placeholder="YY" required />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

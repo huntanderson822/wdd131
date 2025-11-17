@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Recipe Book</title>
+  <meta name="description" content="A collection of delicious recipes with ratings and images." />
+  <meta name="author" content="Hunter Anderson" />
+
+  <meta property="og:title" content="Recipe Book" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A collection of delicious recipes with ratings and images." />
+  <meta property="og:image" content="images/recipe-book.png" />
+  <meta property="og:url" content="https://yourdomain.com/recipes/index.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+  <header>
+    <img src="images/recipe-book.png" alt="Recipe Book logo" />
+    <h1>RecipeBook</h1>
+  </header>
+
+  <main>
+    <form class="search-form" role="search">
+      <label for="search" class="visually-hidden">Find a recipe</label>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search"
+          name="search"
+          placeholder="Find a recipe"
+        />
+        <button type="submit" aria-label="Search">
+          🔍
+        </button>
+      </div>
+    </form>
+
+    <section class="recipes" aria-label="Recipe results">
+      <article class="recipe-card">
+        <img src="images/apple-crisp.jpg" alt="Apple crisp dessert with ice cream" />
+        <div class="recipe-info">
+          <span class="category">dessert</span>
+
+          <h2>Apple Crisp</h2>
+
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            ★★★★☆
+          </span>
+
+          <p class="description">
+            This apple crisp recipe is a simple yet delicious fall dessert that's great served
+            warm with vanilla ice cream.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+      </a>
+    </p>
+    <div class="social" aria-label="Social media links">
+      <a href="#" aria-label="Instagram">
+        <img src="images/instagram_icon.svg" alt="Instagram icon" />
+      </a>
+      <a href="#" aria-label="YouTube">
+        <img src="images/youtube_icon.svg" alt="YouTube icon" />
+      </a>
+      <a href="#" aria-label="Pinterest">
+        <img src="images/pinterest_icon.svg" alt="Pinterest icon" />
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

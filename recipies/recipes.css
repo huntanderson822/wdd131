@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
 
+
 :root {
   --primary-color: #1b98e0;
   --text-dark: #333;
@@ -8,32 +9,30 @@
   --secondary-font: "Quicksand", sans-serif;
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 body {
   font-family: var(--primary-font);
-  background-color: #ffffff; /* no more black bg */
+  background-color: #ffffff;
   color: var(--text-dark);
-  padding: 0;
-  margin: 0;
 }
 
 
 body > header,
 body > main,
 body > footer {
-  max-width: 960px;
+  max-width: 1400px;     
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.2rem;
 }
 
-
+/* Top borders to separate sections */
 body > main {
   border-top: 1px solid var(--border-gray);
 }
@@ -67,15 +66,18 @@ header h1 {
   left: -9999px;
 }
 
+
 .search-form {
   margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-gray);
+  border-bottom: 1px solid var(--border-gray); 
 }
 
 .search-bar {
   display: flex;
   width: 100%;
+  max-width: 480px;       
+  margin: 0 auto;          
   border: 1px solid var(--border-gray);
   border-radius: 6px;
   overflow: hidden;
@@ -93,16 +95,23 @@ header h1 {
   border: none;
   border-left: 1px solid var(--border-gray);
   background-color: #f5f5f5;
-  font-size: 1.1rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
 }
 
 
 .recipe-card {
-  border: 1px solid var(--border-gray);
+  border: 1px solid var(--border-gray);  
   border-radius: 10px;
   padding: 1rem;
-  max-width: 900px;
+  max-width: 100%;         
   margin: 1.5rem auto;
   background: #fff;
   display: flex;
@@ -132,12 +141,28 @@ header h1 {
 }
 
 
+.recipe__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  padding: 0;
+}
+
+.recipe__tags .tag {
+  border: 1px solid #000;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+
 .recipe-card h2 {
   font-family: var(--secondary-font);
   font-size: 1.6rem;
   color: var(--primary-color);
 }
-
 
 .rating {
   font-size: 1.2rem;
@@ -150,7 +175,6 @@ header h1 {
   line-height: 1.45;
   color: #444;
 }
-
 
 
 @media (min-width: 900px) {
@@ -174,9 +198,10 @@ header h1 {
   .description {
     display: block;
     margin-top: 0.5rem;
-    max-width: 95%; 
+    max-width: 95%;
   }
 }
+
 
 footer {
   font-size: 0.75rem;
@@ -192,4 +217,23 @@ footer {
 .social img {
   width: 25px;
   height: 25px;
+}
+
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.9rem;         
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;     
+    text-align: center;         
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social img {
+    width: 32px;
+    height: 32px;
+  }
 }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Hunter Anderson"/>
+    <meta name="description" content="Site plan for Tricity Anderson's engineering portfolio website."/>
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="site-plan.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Tricity Anderson's Engineering Portfolio Site Plan</h1>
+      <h2>Tricity Anderson</h2>
+      <h2>WDD 131</h2>
+    </header>
+
+    <main>
+      <hr />
+      <h2>Overview</h2>
+
+      <h3>Purpose</h3>
+      <p>
+        The purpose of this site is to showcase the professional work of
+        mechanical engineer <strong>Tricity Anderson</strong>. The portfolio
+        will highlight her skills, engineering projects, and accomplishments so
+        potential employers and collaborators can quickly understand what she
+        can do. This website will act as a polished, central place she can
+        share on résumés, LinkedIn, and applications.
+      </p>
+
+      <h3>Audience</h3>
+      <p>
+        The primary audience includes engineering recruiters, hiring managers,
+        and technical interviewers who need a clear overview of Tricity’s
+        capabilities. A secondary audience includes professors, classmates, and
+        industry professionals who want to see examples of her projects and
+        problem-solving process. These visitors are busy and technical, so the
+        content will be concise, professional, and easy to navigate.
+      </p>
+
+      <h3>Dynamic elements</h3>
+      <p>
+        I will use JavaScript to dynamically generate and control the project
+        content on the site. All project data will be stored in an
+        <strong>array of objects</strong> inside an ES module
+        (<code>projects.js</code>), which will be imported into the home page
+        and the projects page. On the home page, JavaScript will filter and
+        display a few featured projects and update a “highlight” text area about
+        Tricity when the user clicks a button. On the projects page, JavaScript
+        will render all project cards into the DOM and let users filter them by
+        category using array methods like <code>filter</code> and
+        <code>forEach</code>. The scripts will use multiple functions, DOM
+        selection and modification, event listeners, and conditional branching
+        (for example, showing a “no projects found” message or styling recent
+        projects differently). I will also include a simple light/dark theme
+        toggle controlled with JavaScript to demonstrate additional DOM
+        interaction.
+      </p>
+
+      <hr />
+      <h2>Branding</h2>
+      <h3>Website Logo</h3>
+      <img src="images/tricity-logo.png" alt="Logo for Tricity Anderson Mechanical Engineer" />
+
+      <hr />
+      <h2>Style Guide</h2>
+
+      <h3>Color Palette</h3>
+      Palette URL:
+      <a
+        href="https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c"
+        target="_blank"
+        >https://coolors.co/396e94-e7c24f-a43312-381d2a-aabd8c</a
+      >
+
+      <table class="colors">
+        <tbody>
+          <tr>
+            <th>Primary</th>
+            <th>Secondary</th>
+            <th>Accent 1</th>
+            <th>Accent 2</th>
+          </tr>
+          <tr>
+            <td class="primary">#396E94</td>
+            <td class="secondary">#E7C24F</td>
+            <td class="accent1">#A43312</td>
+            <td class="accent2">#381D2A</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Typography</h3>
+
+      <h4>Heading Font: Poppins, sans-serif</h4>
+      <p>
+        Poppins is a clean, modern font that feels technical and professional.
+        It will be used for headings, navigation, and important labels.
+      </p>
+
+      <h4>Paragraph Font: Roboto, sans-serif</h4>
+      <p>
+        Roboto is highly readable on screens and pairs well with Poppins. It
+        will be used for body text and longer project descriptions.
+      </p>
+
+      <h3>Normal paragraph example</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+
+      <h3>Colored paragraph example</h3>
+      <p class="colored">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+
+      <h3>Navigation</h3>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+
+      <hr />
+      <h2>Content</h2>
+
+      <h3>Home page</h3>
+      <p>
+        The home page will introduce Tricity as a mechanical engineer and give a
+        quick overview of who she is and what she does. It will include:
+      </p>
+      <ul>
+        <li>
+          A hero section with a short introduction, title (Mechanical Engineer),
+          and a professional photo or engineering-related image.
+        </li>
+        <li>
+          A brief summary of her focus areas (for example: product design,
+          robotics, thermal systems) and her approach to problem solving.
+        </li>
+        <li>
+          A “Featured Projects” section where a few key projects are displayed
+          dynamically with JavaScript.
+        </li>
+        <li>
+          A skills snapshot listing tools and technologies such as SolidWorks,
+          MATLAB, FEA, and prototyping experience.
+        </li>
+        <li>
+          A small contact area with links to email and LinkedIn so visitors can
+          reach out.
+        </li>
+      </ul>
+
+      <h3>Projects page</h3>
+      <p>
+        The projects page will be the main portfolio area where visitors can
+        browse all of Tricity’s projects and filter them by category. It will
+        include:
+      </p>
+      <ul>
+        <li>
+          An introduction describing what kind of projects are shown (class
+          projects, internships, personal builds, etc.).
+        </li>
+        <li>
+          Filter controls (for example: “All”, “Robotics”, “CAD/Design”,
+          “Thermal/Fluids”) that are connected to JavaScript.
+        </li>
+        <li>
+          A grid of project cards generated from the JavaScript data. Each card
+          will show the project title, year, category, a short description, and
+          relevant skills used.
+        </li>
+        <li>
+          A conditional message that appears if no projects match the selected
+          filter.
+        </li>
+      </ul>
+
+      <hr />
+      <h2>Wireframes</h2>
+      <p>
+        Create two wireframes for your site, one for each page, and save them as
+        images in the <code>images/</code> folder.
+      </p>
+
+      <h3>Home</h3>
+      <p>
+        The home page wireframe will show the logo and navigation at the top, a
+        hero section with intro text and image, a featured projects row, a
+        skills section, and a simple contact/footer area.
+      </p>
+      <img src="images/home-wireframe.png" alt="Home page wireframe" />
+
+      <h3>Projects</h3>
+      <p>
+        The projects page wireframe will show the same header and navigation, a
+        short intro, filter controls near the top, and a responsive grid of
+        project cards below.
+      </p>
+      <img src="images/projects-wireframe.png" alt="Projects page wireframe" />
+    </main>
+  </body>
+</html>
+

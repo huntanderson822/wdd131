@@ -1,0 +1,75 @@
+.resume-main {
+    max-width: 900px;
+}
+
+.resume-section {
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-md);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body.theme-dark .resume-section {
+    background-color: rgba(39, 76, 119, 0.3);
+}
+
+.resume-item {
+    margin-bottom: var(--spacing-md);
+}
+
+.resume-item:last-child {
+    margin-bottom: 0;
+}
+
+.resume-meta {
+    color: var(--medium-blue);
+    font-style: italic;
+    margin-bottom: var(--spacing-xs);
+}
+
+.resume-section ul {
+    margin-left: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.resume-section li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.skills-category {
+    background-color: white;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-navy);
+}
+
+body.theme-dark .skills-category {
+    background-color: rgba(39, 76, 119, 0.3);
+}
+
+.skills-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-category li {
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px solid var(--light-accent);
+}
+
+.skills-category li:last-child {
+    border-bottom: none;
+}

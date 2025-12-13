@@ -1,0 +1,26 @@
+:root {
+    --light-bg: #e7ecef;
+    --primary-navy: #274c77;
+    --medium-blue: #6096ba;
+    --light-accent: #a3cef1;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+}
+
+/* Dark theme */
+body.theme-dark {
+    --light-bg: #1a1a2e;
+    --primary-navy: #6096ba;
+    --medium-blue: #a3cef1;
+    --text-dark: #e7ecef;
+    --text-light: #e7ecef;
+}

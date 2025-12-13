@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tricity Anderson's Engineering Projects Portfolio">
+    <title>Projects || Tricity Anderson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <header>
+    <div class="header-content">
+        <img src="images/tricity_logo.png" alt="Tricity Anderson Logo" class="logo">
+        <h1 class="site-title">Tricity Anderson</h1>
+    </div>
+    <div class="header-controls">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+    </div>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="projects-intro">
+            <h2>Engineering Projects</h2>
+            <p>This portfolio showcases a collection of projects from coursework, internships, and personal builds. Each project demonstrates problem-solving skills, technical expertise, and a passion for innovation in mechanical engineering.</p>
+        </section>
+
+        <section class="projects-filter">
+            <h3>Filter by Category</h3>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="Robotics">Robotics</button>
+                <button class="filter-btn" data-category="CAD/Design">CAD/Design</button>
+                <button class="filter-btn" data-category="Thermal/Fluids">Thermal/Fluids</button>
+                <button class="filter-btn" data-category="Manufacturing">Manufacturing</button>
+            </div>
+        </section>
+
+        <section class="projects-display">
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects are going to be generated dynamically from the projects-page.js -->
+            </div>
+            <div id="no-projects-message" class="no-projects" style="display: none;">
+                <p>No projects found in this category.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tricity Anderson. All rights reserved.</p>
+        <p>WDD 131 portfolio project</p>
+    </footer>
+
+    <script type="module" src="scripts/projects-page.js"></script>
+    <script type="module" src="scripts/theme.js"></script>
+        <script type="module" src="scripts/mobile-menu.js"></script>
+</body>
+</html>

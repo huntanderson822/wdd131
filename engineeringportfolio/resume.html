@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tricity Anderson's Resume">
+    <title>Resume || Tricity Anderson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/resume.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+    <header>
+    <div class="header-content">
+        <img src="images/tricity_logo.png" alt="Tricity Anderson Logo" class="logo">
+        <h1 class="site-title">Tricity Anderson</h1>
+    </div>
+    <div class="header-controls">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+    </div>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="resume-main">
+        <section class="resume-section">
+            <h2>Summary</h2>
+            <p>Mechanical engineer with expertise in product design, robotics, and thermal systems. Proven ability to solve complex engineering challenges through innovative design, systematic analysis, and hands-on prototyping. Strong background in CAD modeling, FEA/CFD simulation, and manufacturing processes.</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor of Science in Mechanical Engineering</h3>
+                <p class="resume-meta">University Name | 2020 - 2024</p>
+                <ul>
+                    <li>GPA: 3.6/4.0</li>
+                    <li>Relevant Coursework: Thermodynamics, Fluid Mechanics, Machine Design, Control Systems, Manufacturing Processes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Experience</h2>
+            <div class="resume-item">
+                <h3>Engineering Intern</h3>
+                <p class="resume-meta">Tech Company Inc. | Summer 2023</p>
+                <ul>
+                    <li>Designed and prototyped components for robotic assembly systems using SolidWorks</li>
+                    <li>Conducted FEA analysis to optimize structural integrity and reduce material costs by 15%</li>
+                    <li>Collaborated with cross-functional teams to improve manufacturing processes</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h3>Research Assistant</h3>
+                <p class="resume-meta">University Research Lab | 2022 - 2023</p>
+                <ul>
+                    <li>Developed thermal management solutions for electronic systems</li>
+                    <li>Performed CFD simulations to analyze heat transfer characteristics</li>
+                    <li>Presented findings at regional engineering conference</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Software</h3>
+                    <ul>
+                        <li>SolidWorks, AutoCAD, Fusion 360</li>
+                        <li>ANSYS, MATLAB, Python</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>FEA & CFD Analysis</li>
+                        <li>3D Printing & Rapid Prototyping</li>
+                        <li>CNC Machining</li>
+                        <li>Material Testing & Characterization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2>Certifications & Awards</h2>
+            <ul>
+                <li>SolidWorks Certified Associate (CSWA)</li>
+                <li>Dean's List, Fall 2022 - Spring 2024</li>
+                <li>Best Engineering Project Award, University Engineering Fair 2023</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tricity Anderson. All rights reserved.</p>
+        <p>WDD 131 portfolio project</p>
+    </footer>
+
+    <script type="module" src="scripts/theme.js"></script>
+        <script type="module" src="scripts/mobile-menu.js"></script>
+</body>
+</html>

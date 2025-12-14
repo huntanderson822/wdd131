@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/resume.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
 </head>
 <body>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
@@ -30,9 +31,9 @@
     </div>
     <nav>
         <ul class="nav-list">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><a href="resume.html"  class="active">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -112,8 +113,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Tricity Anderson. All rights reserved.</p>
-        <p>WDD 131 portfolio project</p>
+    <nav class="footer-nav">
+        <a href="index.html"class="footer-home-nav">Home </a>
+        <a href="projects.html" class="footer-projects-nav"> Projects </a>
+        <a href="resume.html" class="footer-resume-nav"> Resume </a>
+        <a href="contact.html" class="footer-contact-nav"> Contact </a>
+    </nav>
+    <p>&copy; 2025 Tricity Anderson. All rights reserved.</p>
+    <p>WDD 131 portfolio project</p>
     </footer>
 
     <script type="module" src="scripts/theme.js"></script>

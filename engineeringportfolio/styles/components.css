@@ -1,4 +1,4 @@
-/* Header and  the navigation */
+/* Header styles */
 header {
     background-color: var(--primary-navy);
     color: var(--text-light);
@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-    height: 50px;
+    height: 90px;
     width: auto;
 }
 
@@ -54,14 +54,14 @@ nav {
     color: var(--text-light);
 }
 
-/* Theme toggle from light to dark */
+/* Theme toggle from the light mode to dark */
 .theme-toggle {
     --toggle-bg: #cdd8e5;
     --toggle-thumb: #ffffff;
     --toggle-glow: rgba(96, 150, 186, 0.45);
     width: 60px;
     height: 32px;
-    padding: 0;
+    padding: 5px;
     border: none;
     border-radius: 999px;
     background: var(--toggle-bg);
@@ -114,7 +114,7 @@ body.theme-dark .theme-toggle::after {
     box-shadow: 0 4px 10px rgba(0,0,0,0.18);
 }
 
-/* Mobile menu toggle button */
+/* Hamburger menu for responsive sizes (both medium and mobile cuz I couldn't design a good medium nav)*/
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -157,7 +157,7 @@ body.theme-dark .theme-toggle::after {
     gap: var(--spacing-sm);
 }
 
-/* All project cards  */
+/* All the project cards  */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -187,6 +187,7 @@ body.theme-dark .project-card {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: center;
     border-radius: 4px;
     margin-bottom: var(--spacing-sm);
 }
@@ -256,8 +257,31 @@ footer {
     text-align: center;
     padding: var(--spacing-md);
     margin-top: var(--spacing-xl);
+    justify-content: center;
 }
 
 footer p {
     margin-bottom: var(--spacing-xs);
+}
+.footer-nav {
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+    justify-content: center;
+    padding-left: 75px;
+}
+
+.footer-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--light-accent);
+}
+.footer-home-nav,
+.footer-projects-nav,
+.footer-resume-nav,
+.footer-contact-nav {
+    margin: 0 var(--spacing-xs);
 }

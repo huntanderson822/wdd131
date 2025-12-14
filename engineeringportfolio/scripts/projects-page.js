@@ -10,7 +10,7 @@ function createProjectCard(project) {
     
     const img = document.createElement('img');
     img.src = project.image;
-    img.alt = `${project.title} project image`;
+    img.alt = `AI generated until I get real image`;
     img.loading = 'lazy';
     
     const title = document.createElement('h3');

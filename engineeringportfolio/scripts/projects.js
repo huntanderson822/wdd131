@@ -7,7 +7,7 @@ export const projects = [
         featured: true,
         skills: ["SolidWorks", "Arduino", "Python", "Control Systems"],
         summary: "Designed and built a 6-DOF robotic arm with autonomous object detection and manipulation capabilities. Implemented PID control for precise movement and integrated computer vision for object recognition.",
-        image: "images/project-robot-arm.jpg"
+        image: "images/robot-arm.jpg"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const projects = [
         featured: true,
         skills: ["ANSYS", "CFD", "MATLAB", "Thermodynamics"],
         summary: "Analyzed and optimized a shell-and-tube heat exchanger design using CFD simulation. Achieved 20% improvement in heat transfer efficiency while reducing material costs through iterative design refinement.",
-        image: "images/project-heat-exchanger.jpg"
+        image: "images/heat-pipe.jpg"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const projects = [
         featured: true,
         skills: ["Fusion 360", "3D Printing", "Biomechanics", "Prototyping"],
         summary: "Designed a lightweight, functional prosthetic hand using parametric modeling in Fusion 360. Prototyped multiple iterations using 3D printing and tested with users to improve ergonomics and functionality.",
-        image: "images/project-prosthetic.jpg"
+        image: "images/3d-prostetic-hand.jpg"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const projects = [
         featured: false,
         skills: ["CNC Machining", "SolidWorks", "GD&T", "Quality Control"],
         summary: "Manufactured a precision gearbox assembly using CNC machining. Created detailed manufacturing drawings with GD&T specifications and implemented quality control procedures to ensure dimensional accuracy.",
-        image: "images/project-gearbox.jpg"
+        image: "images/gear-box.jpg"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const projects = [
         featured: false,
         skills: ["SolidWorks", "FEA", "Carbon Fiber", "Aerodynamics"],
         summary: "Designed a lightweight carbon fiber frame for a quadcopter drone. Performed FEA analysis to optimize strength-to-weight ratio and conducted wind tunnel testing to validate aerodynamic performance.",
-        image: "images/project-drone.jpg"
+        image: "images/drone-frame.jpg"
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ export const projects = [
         featured: false,
         skills: ["PLC Programming", "Sensors", "Conveyor Systems", "Automation"],
         summary: "Developed an automated sorting system using PLC programming and sensor integration. The system sorts objects by weight and color, improving efficiency in a manufacturing environment.",
-        image: "images/project-sorting.jpg"
+        image: "images/auto-sort.jpg"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ export const projects = [
         featured: false,
         skills: ["Thermal Analysis", "MATLAB", "Solar Energy", "Heat Transfer"],
         summary: "Designed and tested a parabolic solar thermal collector for residential water heating. Analyzed thermal efficiency using MATLAB simulations and validated results with experimental testing.",
-        image: "images/project-solar.jpg"
+        image: "images/solar-collect.jpg"
     },
     {
         id: 8,
@@ -77,6 +77,6 @@ export const projects = [
         featured: false,
         skills: ["FEA", "SolidWorks", "Material Science", "Structural Analysis"],
         summary: "Performed comprehensive FEA analysis on a mountain bike frame design. Evaluated stress concentrations and optimized tube geometry to improve durability while maintaining lightweight construction.",
-        image: "images/project-bike.jpg"
+        image: "images/bike-frame.jpg"
     }
 ];

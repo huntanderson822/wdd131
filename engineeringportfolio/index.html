@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tricity Anderson - Mechanical Engineer Portfolio">
-    <title>Tricity Anderson || Mechanical Engineer</title>
+    <title>Home || Tricity Anderson</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+
 </head>
 <body>
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
@@ -38,23 +40,40 @@
     </nav>
 </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h2>Mechanical Engineer</h2>
-                    <p>Passionate about product design, robotics, and thermal systems. I solve complex engineering challenges through innovative design and systematic problem-solving.</p>
-                </div>
-                <div class="hero-image">
-                    <img src="images/hero-engineering.jpg" alt="Tricity Anderson working on engineering project">
-                </div>
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/hero.jpg" alt="Tricity Anderson working on engineering project">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Mechanical Engineer</h2>
+                <p>Passionate about product design, robotics, and thermal systems. I solve complex engineering challenges through innovative design and systematic problem-solving.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <main>
         <section class="featured-projects">
             <h2>Featured Projects</h2>
             <div id="featured-projects-container" class="projects-grid">
-                    <!--The featured projects for the portfolio page will be dynamically loaded here by home.js-->
+                    <!--The featured projects for the portfolio page will be dynamically loaded here by home.js!:)-->
+            </div>
+        </section>
+                <section class="about-tricity">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/tricity-conference.jpeg" alt="Tricity Anderson at conference">
+                </div>
+                <div class="about-text">
+                    <h2>About Tricity</h2>
+                    <p>I am an aspiring biomedical device engineer! My dream has always been to create innovative 
+                        medical devices that improve patient outcomes and quality of life. I am passionate about 
+                        combining mechanical engineering principles with biomedical applications to solve real-world 
+                        healthcare challenges. I love solving problems and have a passion for innovation in engineering.
+                        Being at the forfront of technological innovation that solves real world problems
+                        in engineering has always been my reason for working so hard. I hope as an engineer I 
+                        innovate, inspire, and make a meaningful impact in the field of engineering.</p>
+                </div>
             </div>
         </section>
 
@@ -62,8 +81,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Tricity Anderson. All rights reserved.</p>
-        <p>WDD 131 portfolio project</p>
+    <nav class="footer-nav">
+        <a href="index.html"class="footer-home-nav">Home </a>
+        <a href="projects.html" class="footer-projects-nav"> Projects </a>
+        <a href="resume.html" class="footer-resume-nav"> Resume </a>
+        <a href="contact.html" class="footer-contact-nav"> Contact </a>
+    </nav>
+    <p>&copy; 2025 Tricity Anderson. All rights reserved.</p>
+    <p>WDD 131 portfolio project</p>
     </footer>
 
     <script type="module" src="scripts/home.js"></script>

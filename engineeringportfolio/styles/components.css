@@ -167,20 +167,23 @@ body.theme-dark .theme-toggle::after {
 
 .project-card {
     background-color: white;
-    border: 2px solid var(--medium-blue);
+    border: 3px solid var(--primary-navy); 
     border-radius: 8px;
     padding: var(--spacing-md);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 body.theme-dark .project-card {
-    background-color: rgba(39, 76, 119, 0.3);
+    background-color: rgba(39, 76, 119, 0.5); 
     border-color: var(--medium-blue);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-color: var(--medium-blue); 
 }
 
 .project-card img {
@@ -190,21 +193,38 @@ body.theme-dark .project-card {
     object-position: center;
     border-radius: 4px;
     margin-bottom: var(--spacing-sm);
+    border: 1px solid rgba(0, 0, 0, 0.1); 
 }
 
 .project-card h3 {
     color: var(--primary-navy);
     margin-bottom: var(--spacing-xs);
+    font-weight: 700; 
 }
 
 body.theme-dark .project-card h3 {
     color: var(--light-accent);
+    font-weight: 700;
+}
+
+.project-card p {
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+body.theme-dark .project-card p {
+    color: var(--text-light);
 }
 
 .project-meta {
-    color: var(--medium-blue);
+    color: var(--primary-navy); 
     font-size: 0.9rem;
     margin-bottom: var(--spacing-sm);
+    font-weight: 500; 
+}
+
+body.theme-dark .project-meta {
+    color: var(--light-accent); 
 }
 
 .project-skills {
@@ -215,18 +235,21 @@ body.theme-dark .project-card h3 {
 }
 
 .skill-tag {
-    background-color: var(--light-accent);
-    color: var(--primary-navy);
+    background-color: var(--primary-navy); 
+    color: var(--text-light); 
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--primary-navy); 
 }
 
 body.theme-dark .skill-tag {
     background-color: var(--medium-blue);
-    color: var(--text-light);
-}
+    color: #1a1a1a;
+    border-color: var(--light-accent);
 
+}
 /* Buttons */
 .highlight-button,
 .submit-btn {

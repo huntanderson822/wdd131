@@ -12,6 +12,8 @@ function createProjectCard(project) {
     img.src = project.image;
     img.alt = `AI generated until I get real image`;
     img.loading = 'lazy';
+    img.width = 800;  // Set explicit width
+    img.height = 200; // Set explicit height (matches CSS height)
     
     const title = document.createElement('h3');
     title.textContent = project.title;

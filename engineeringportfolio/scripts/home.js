@@ -12,7 +12,9 @@ function createProjectCard(project) {
     const img = document.createElement('img');
     img.src = project.image;
     img.alt = `${project.title} project image`;
-    img.loading = 'lazy'; 
+    img.loading = 'lazy';
+    img.width = 800;  // Set explicit width
+    img.height = 200; // Set explicit height (matches CSS height)
     
     const title = document.createElement('h3');
     title.textContent = project.title;
